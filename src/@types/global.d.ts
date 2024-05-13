@@ -1,0 +1,3 @@
+type TypeProps = {
+  name: string;
+};
