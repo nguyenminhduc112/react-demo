@@ -6,7 +6,7 @@ import type { MenuProps } from "antd";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import { Route, Routes, useNavigate } from "react-router-dom";
 import StateComponent from "./components/Demo/StateComponent";
-import Todo from "./components/AppTodo/Todo";
+import MainTodo from "./components/AppTodo/MainTodo";
 const { Header, Content, Footer, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>["items"][number];
@@ -62,7 +62,7 @@ function App() {
           <Routes>
             <Route path="/" element={<StateComponent />} />
             <Route path="/click-me" element={<StateComponent />} />
-            <Route path="/todo" element={<Todo />} />
+            <Route path="/todo" element={<MainTodo />} />
           </Routes>
         </Content>
         <Footer style={{ textAlign: "center" }}>
